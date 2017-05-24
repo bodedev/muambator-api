@@ -26,7 +26,7 @@ Não. Ainda não existe almoço grátis, e alguém tem que ajudar a pagar nosso 
 
 ## Putz, mas pelo menos é fácil fazer uma integração?
 
-Claro serhumaninho. É bem simples mesmo. Abaixo apresentamos um código de exemplo para adicionar um pacote através de um script escrito em Python [(Uma série de scripts está disponível aqui)](https://github.com/bodedev/muambator-client-python). 
+Claro serhumaninho. É bem simples mesmo. Abaixo apresentamos um código de exemplo para adicionar um pacote através de um script escrito em Python. [Uma série de scripts está disponível aqui.](https://github.com/bodedev/muambator-client-python). 
 
 ```python
 # -*- encoding: utf-8 -*-
@@ -120,7 +120,7 @@ URL do endpoint: http://www.muambator.com.br/api/clientes/v1/
 
 ### Chamada para adicionar um pacote:
 
-URL: http://www.muambator.com.br/api/clientes/v1/pacotes/<codigo do pacote aqui>/
+URL: http://www.muambator.com.br/api/clientes/v1/pacotes/[codigo do pacote aqui]/
 
 Método: POST
 
@@ -140,7 +140,7 @@ Content-Type: application/json
 
 ### Chamada para remover um pacote:
 
-URL: http://www.muambator.com.br/api/clientes/v1/pacotes/<codigo do pacote aqui>/
+URL: http://www.muambator.com.br/api/clientes/v1/pacotes/[codigo do pacote aqui]/
 
 Método: DELETE
 
