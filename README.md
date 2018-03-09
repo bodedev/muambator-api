@@ -190,3 +190,10 @@ Método: GET
 URL: http://www.muambator.com.br/api/clientes/v1/pacotes/atrasados/
 
 Método: GET
+
+## Salves
+
+Tão importante quanto construir essa bagaça, é reconhecer e mandar o salve pra aquela galera que nos ajudou a descobrir bugs, melhorar documentação no melhor momento #tamojunto. Aqui é uma maneira de agradecer e reconhecer essas pessoas:
+
+- Thiago Barradas
+- Pedro Santiago
