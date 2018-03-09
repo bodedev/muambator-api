@@ -128,15 +128,16 @@ Content-Type: application/json
 
 #### Quais parâmetros eu posso repassar para a criação do pacote?
 
-| Nome do Parâmetro     | Tipo   | Tamanho Máximo | Valor Padrão | Observação                               |
-| --------------------- | ------ | -------------- | ------------ | ---------------------------------------- |
-| nome                  | string | 250 bytes      | null         |                                          |
-| tags                  | list   | 250 bytes      | []           |                                          |
-| categoria             | string | 30             | null      | [Qualquer id válido de categoria](#chamada-para-buscar-as-categorias) |
-| cep_origem            | string | 10             | null         | Formato: 99.999-999                      |
-| cep_destino           | string | 19             | null         | Formato: 99.999-999                      |
-| data_previsao_entrega | date   | 10             | null         | Formato: yyyy-mm-dd                      |
-| valor                 | float  |                | 0            |                                          |
+| Nome do Parâmetro     | Tipo   | Tamanho Máximo | Valor Padrão | Observação                                                   |
+| --------------------- | ------ | -------------- | ------------ | ------------------------------------------------------------ |
+| nome                  | string | 250 bytes      | null         |                                                              |
+| emails                | list   | (sem limites)  | []           | Neste campo podem ser informados uma lista de e-mails que irão receber as notificações dos pacotes. |
+| tags                  | list   | 250 bytes      | []           |                                                              |
+| categoria             | string | 30             | null         | [Qualquer id válido de categoria](#chamada-para-buscar-as-categorias) |
+| cep_origem            | string | 10             | null         | Formato: 99.999-999                                          |
+| cep_destino           | string | 19             | null         | Formato: 99.999-999                                          |
+| data_previsao_entrega | date   | 10             | null         | Formato: yyyy-mm-dd                                          |
+| valor                 | float  |                | 0            |                                                              |
 (#categorias)
 ### Chamada para remover um pacote 
 
