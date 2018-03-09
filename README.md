@@ -133,7 +133,7 @@ Content-Type: application/json
 | nome                  | string | 250 bytes      | null         |                                                              |
 | emails                | list   | (sem limites)  | []           | Neste campo podem ser informados uma lista de e-mails que irão receber as notificações dos pacotes. |
 | tags                  | list   | 250 bytes      | []           |                                                              |
-| categoria             | string | 30             | null         | [Qualquer id válido de categoria](#chamada-para-buscar-as-categorias) |
+| categoria             | string | 30             | null         | [Qualquer id válido de categoria](#chamada-para-buscar-as-categorias) |
 | cep_origem            | string | 10             | null         | Formato: 99.999-999                                          |
 | cep_destino           | string | 19             | null         | Formato: 99.999-999                                          |
 | data_previsao_entrega | date   | 10             | null         | Formato: yyyy-mm-dd                                          |
