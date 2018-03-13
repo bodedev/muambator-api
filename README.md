@@ -52,7 +52,79 @@ O código acima basicamente irá apresentar a seguinte reposta:
 
 ```
 201
-{"status":"OK","message":"","results":{"PL970650197BR":{"pais_origem":"Brasil","tributado":false,"icone":"","nome":"","extraviado_ou_devolvido":false,"tags":[],"entregue":true,"sigla_pais_origem":"br","tracking":[{"local":"CEE NORTE - Porto Alegre/RS","map":"Porto Alegre, RS, Brasil","datahora":"08/05/2017 16:18","situacao":"Entrega Efetuada","icone":"green"},{"local":"CEE NORTE - Porto Alegre/RS","map":"Porto Alegre, RS, Brasil","datahora":"08/05/2017 10:03","situacao":"Objeto saiu para entrega ao destinat\u00e1rio","icone":"blue"},{"local":"CTE PORTO ALEGRE - PORTO ALEGRE/RS Objeto encaminhado","map":"PORTO ALEGRE, RS, Brasil","datahora":"05/05/2017 04:13","situacao":"Em tr\u00e2nsito para CEE NORTE - Porto Alegre/RS","icone":"orange"},{"local":"CTE CURITIBA - CURITIBA/PR Objeto encaminhado","map":"CURITIBA, PR, Brasil","datahora":"30/04/2017 12:26","situacao":"Em tr\u00e2nsito para CTE PORTO ALEGRE - PORTO ALEGRE/RS","icone":"orange"},{"local":"AGF SAO CAMILO - Pinhais/PR Objeto encaminhado","map":"Pinhais, PR, Brasil","datahora":"27/04/2017 10:20","situacao":"Em tr\u00e2nsito para CTE CURITIBA - CURITIBA/PR","icone":"orange"},{"local":"AGF SAO CAMILO - Pinhais/PR","map":"Pinhais, PR, Brasil","datahora":"26/04/2017 14:05","situacao":"Objeto postado ap\u00f3s o hor\u00e1rio limite da ag\u00eancia","icone":"yellow"}],"arquivado":false,"marcado_como_entregue":false,"numero_dias":12,"carrier":"correios","numero_dias_uteis":7,"codigo":"PL970650197BR","ultimo_tracking":{"local":"CEE NORTE - Porto Alegre/RS","map":"Porto Alegre, RS, Brasil","datahora":"08/05/2017 16:18","situacao":"Entrega Efetuada","icone":"green"}}}}
+{
+  "status": "OK",
+  "message": "",
+  "results": {
+    "PL970650197BR": {
+      "pais_origem": "Brasil",
+      "tributado": false,
+      "icone": "",
+      "nome": "",
+      "extraviado_ou_devolvido": false,
+      "tags": [],
+      "entregue": true,
+      "sigla_pais_origem": "br",
+      "tracking": [
+        {
+          "local": "CEE NORTE - Porto Alegre/RS",
+          "map": "Porto Alegre, RS, Brasil",
+          "datahora": "08/05/2017 16:18",
+          "situacao": "Entrega Efetuada",
+          "icone": "green"
+        },
+        {
+          "local": "CEE NORTE - Porto Alegre/RS",
+          "map": "Porto Alegre, RS, Brasil",
+          "datahora": "08/05/2017 10:03",
+          "situacao": "Objeto saiu para entrega ao destinatário",
+          "icone": "blue"
+        },
+        {
+          "local": "CTE PORTO ALEGRE - PORTO ALEGRE/RS Objeto encaminhado",
+          "map": "PORTO ALEGRE, RS, Brasil",
+          "datahora": "05/05/2017 04:13",
+          "situacao": "Em trânsito para CEE NORTE - Porto Alegre/RS",
+          "icone": "orange"
+        },
+        {
+          "local": "CTE CURITIBA - CURITIBA/PR Objeto encaminhado",
+          "map": "CURITIBA, PR, Brasil",
+          "datahora": "30/04/2017 12:26",
+          "situacao": "Em trânsito para CTE PORTO ALEGRE - PORTO ALEGRE/RS",
+          "icone": "orange"
+        },
+        {
+          "local": "AGF SAO CAMILO - Pinhais/PR Objeto encaminhado",
+          "map": "Pinhais, PR, Brasil",
+          "datahora": "27/04/2017 10:20",
+          "situacao": "Em trânsito para CTE CURITIBA - CURITIBA/PR",
+          "icone": "orange"
+        },
+        {
+          "local": "AGF SAO CAMILO - Pinhais/PR",
+          "map": "Pinhais, PR, Brasil",
+          "datahora": "26/04/2017 14:05",
+          "situacao": "Objeto postado após o horário limite da agência",
+          "icone": "yellow"
+        }
+      ],
+      "arquivado": false,
+      "marcado_como_entregue": false,
+      "numero_dias": 12,
+      "carrier": "correios",
+      "numero_dias_uteis": 7,
+      "codigo": "PL970650197BR",
+      "ultimo_tracking": {
+        "local": "CEE NORTE - Porto Alegre/RS",
+        "map": "Porto Alegre, RS, Brasil",
+        "datahora": "08/05/2017 16:18",
+        "situacao": "Entrega Efetuada",
+        "icone": "green"
+      }
+    }
+  }
+}
 ```
 
 O 201 é o código HTTP para informar que um objeto foi criado. [Clique aqui](http://www.restpatterns.org/HTTP_Status_Codes/201_-_Created) para maiores informações.
