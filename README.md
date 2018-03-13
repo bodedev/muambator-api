@@ -39,7 +39,7 @@ if __name__ == "__main__":
     host = "www.muambator.com.br"
     api_token = "insira-seu-token-aqui"
     codigo_pacote = "PL970650197BR"
-    r = requests.post('http://%s/api/clientes/v1/pacotes/%s/?api-token=%s' % (host, codigo_pacote, api_token), headers={"Content-type": "application/json"})
+    r = requests.post('https://%s/api/clientes/v1/pacotes/%s/?api-token=%s' % (host, codigo_pacote, api_token), headers={"Content-type": "application/json"})
     print r.status_code
     print r.text
 ```
@@ -105,7 +105,7 @@ if __name__ == "__main__":
     host = "www.muambator.com.br"
     api_token = "insira-seu-token-aqui"
     codigo_pacote = "PL970650197BR"
-    r = requests.delete('http://%s/api/clientes/v1/pacotes/%s/?api-token=%s' % (host, codigo_pacote, api_token), headers={"Content-type": "application/json"})
+    r = requests.delete('https://%s/api/clientes/v1/pacotes/%s/?api-token=%s' % (host, codigo_pacote, api_token), headers={"Content-type": "application/json"})
     print r.status_code
     print r.text
 ```
@@ -114,13 +114,13 @@ Neste caso, a execução acima apresentará o ```status code``` como ```204``` (
 
 ## Agora vamos ao resumo executivo para pessoas realmente ocupadas
 
-Neste parágrafo é pra você apresentar naquela reunião que marcaram para falar 2 horas sobre a possível integração com o [Muambator](http://www.muambator.com.br):
+Neste parágrafo é pra você apresentar naquela reunião que marcaram para falar 2 horas sobre a possível integração com o [Muambator](https://www.muambator.com.br):
 
-URL do endpoint: http://www.muambator.com.br/api/clientes/v1/
+URL do endpoint: https://www.muambator.com.br/api/clientes/v1/
 
 ### Chamada para adicionar um pacote
 
-URL: http://www.muambator.com.br/api/clientes/v1/pacotes/[codigo do pacote aqui]/
+URL: https://www.muambator.com.br/api/clientes/v1/pacotes/[codigo do pacote aqui]/
 
 Método: POST
 
@@ -141,7 +141,7 @@ Content-Type: application/json
 (#categorias)
 ### Chamada para remover um pacote 
 
-URL: http://www.muambator.com.br/api/clientes/v1/pacotes/[codigo do pacote aqui]/
+URL: https://www.muambator.com.br/api/clientes/v1/pacotes/[codigo do pacote aqui]/
 
 Método: DELETE
 
@@ -149,7 +149,7 @@ Content-Type: application/json
 
 ### Chamada para buscar as categorias 
 
-URL: http://www.muambator.com.br/api/clientes/v1/categorias/
+URL: https://www.muambator.com.br/api/clientes/v1/categorias/
 
 Método: GET
 
@@ -157,37 +157,37 @@ Método: GET
 
 #### Todos os pacotes vinculados na conta
 
-URL: http://www.muambator.com.br/api/clientes/v1/pacotes/
+URL: https://www.muambator.com.br/api/clientes/v1/pacotes/
 
 Método: GET
 
 #### Todos os pacotes pentendes (que ainda não foram entregues) na conta
 
-URL: http://www.muambator.com.br/api/clientes/v1/pacotes/pendentes/
+URL: https://www.muambator.com.br/api/clientes/v1/pacotes/pendentes/
 
 Método: GET
 
 #### Todos os pacotes entregues na conta
 
-URL: http://www.muambator.com.br/api/clientes/v1/pacotes/entregues/
+URL: https://www.muambator.com.br/api/clientes/v1/pacotes/entregues/
 
 Método: GET
 
 #### Todos os pacotes arquivados (que já foram entregues e foram "arquivados") na conta
 
-URL: http://www.muambator.com.br/api/clientes/v1/pacotes/arquivados/
+URL: https://www.muambator.com.br/api/clientes/v1/pacotes/arquivados/
 
 Método: GET
 
 #### Todos os pacotes tributados (aqueles mesmo, que você pensou que chegariam suave na nave e você levou o talagaço) na conta
 
-URL: http://www.muambator.com.br/api/clientes/v1/pacotes/tributados/
+URL: https://www.muambator.com.br/api/clientes/v1/pacotes/tributados/
 
 Método: GET
 
 #### Todos os pacotes atrasados na conta (aqueles que ainda não foram entregues e possuem o atributo `data_previsao_chegada` para uma data anterior ao dia/hora atual)
 
-URL: http://www.muambator.com.br/api/clientes/v1/pacotes/atrasados/
+URL: https://www.muambator.com.br/api/clientes/v1/pacotes/atrasados/
 
 Método: GET
 
