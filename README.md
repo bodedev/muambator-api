@@ -211,6 +211,15 @@ Content-Type: application/json
 | data_previsao_entrega | date   | 10             | null         | Formato: yyyy-mm-dd                                          |
 | valor                 | float  |                | 0            |                                                              |
 (#categorias)
+
+### Chamada para buscar um pacote específico
+
+URL: https://www.muambator.com.br/api/clientes/v1/pacotes/[codigo do pacote aqui]/
+
+Método: GET
+
+Content-Type: application/json
+
 ### Chamada para remover um pacote 
 
 URL: https://www.muambator.com.br/api/clientes/v1/pacotes/[codigo do pacote aqui]/
